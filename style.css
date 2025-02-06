@@ -54,3 +54,66 @@ button:hover {
         text-align: center;
     }
 }
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease-in-out;  /* Smooth background change */
+}
+
+
+#weather-result {
+    transition: opacity 0.5s ease-in-out; /* Smooth opacity transition */
+}
+
+#weather-result {
+    opacity: 0;
+}
+
+#weather-result.visible {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .forecast-container {
+        flex-direction: column; /* Stack forecast cards vertically on mobile */
+        gap: 10px;
+    }
+
+    .forecast-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Smaller heading on small screens */
+    }
+
+    button {
+        width: 100%;  /* Full-width buttons for mobile */
+        font-size: 18px;
+    }
+}
