@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.search-box {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result, #forecast {
+    margin-top: 20px;
+    font-size: 18px;
+}
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+    .forecast-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .forecast-item {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+}
